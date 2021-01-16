@@ -1,10 +1,10 @@
-import { MtsLogo } from '../../icons';
-import styles from './header.module.scss';
+// import styles from './header.module.scss';
+import {Logo} from "../../ui-kit/Logo";
 
 export function Header() {
   return (
     <div>
-      <MtsLogo className={styles.logo} />
+        <Logo name="Маркетолог"/>
     </div>
   );
 }

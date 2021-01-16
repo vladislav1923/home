@@ -1,0 +1,18 @@
+# Editor configuration, see http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+
+# Code files
+[*.cs,*.csx,*.js,*.jsx,*.ts,*,tsx,*.css,*.less,*.scss]
+end_of_line = crlf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+max_line_length = 140
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
