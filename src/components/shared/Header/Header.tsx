@@ -1,10 +1,10 @@
 // import styles from './header.module.scss';
-import {Logo} from "../../ui-kit/Logo";
+import { Logo } from '../../ui-kit/Logo';
 
 export function Header() {
   return (
     <div>
-        <Logo name="Маркетолог"/>
+      <Logo name="Маркетолог" />
     </div>
   );
 }
