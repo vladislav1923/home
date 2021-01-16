@@ -1,16 +1,16 @@
-import React, { ReactNode } from 'react'
-import Head from 'next/head'
+import { ReactNode } from 'react';
+import Head from 'next/head';
 import styles from './layout.module.scss';
-import {Header} from "../Header";
+import { Header } from '../Header';
 
 type Props = {
-  children?: ReactNode,
-  title?: string,
-  description?: string,
+  children: ReactNode,
+  title: string,
+  description: string,
 }
 
 export function Layout(props: Props) {
-  const {children, title, description} = props;
+  const { children, title, description } = props;
 
   return (
     <>
@@ -22,17 +22,16 @@ export function Layout(props: Props) {
       </Head>
       <div className={styles.layout}>
         <header className={styles.header}>
-          <Header/>
+          <Header />
         </header>
-        <main  className={styles.main}>
+        <main className={styles.main}>
           {children}
         </main>
         <footer className={styles.footer}>
           Футер
-          {/*<Footer/>*/}
+          {/* <Footer/> */}
         </footer>
       </div>
     </>
-  )
+  );
 }
-

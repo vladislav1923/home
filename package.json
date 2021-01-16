@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint '*/**/*.{ts,tsx}'"
+    "lint": "eslint '*/**/*.{ts,tsx}' --quiet --fix"
   },
   "dependencies": {
     "next": "10.0.5",

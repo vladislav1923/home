@@ -1,7 +1,7 @@
-import React from 'react'
-import type { AppProps /*, AppContext */ } from 'next/app'
-import '../styles/index.scss'
+import type { AppProps } from 'next/app';
+import '../styles/index.scss';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  // eslint-disable-next-line react/jsx-props-no-spreading
+  return <Component {...pageProps} />;
 }
