@@ -1,0 +1,39 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'MTSSans';
+  font-style: normal;
+  src: url('/assets/fonts/mts-sans/MTSSans-Regular.svg') format('svg'),
+  url('/assets/fonts/mts-sans/MTSSans-Regular.woff') format('woff'),
+  url('/assets/fonts/mts-sans/MTSSans-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'MTSSans';
+  font-style: normal;
+  src: url('/assets/fonts/mts-sans/MTSSans-Medium.svg') format('svg'),
+  url('/assets/fonts/mts-sans/MTSSans-Medium.woff') format('woff'),
+  url('/assets/fonts/mts-sans/MTSSans-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'MTSSans';
+  font-style: normal;
+  src: url('/assets/fonts/mts-sans/MTSSans-Bold.svg') format('svg'),
+  url('/assets/fonts/mts-sans/MTSSans-Bold.woff') format('woff'),
+  url('/assets/fonts/mts-sans/MTSSans-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: 'MTSSans';
+  font-style: normal;
+  src: url('/assets/fonts/mts-sans/MTSSans-UltraWide.svg') format('svg'),
+  url('/assets/fonts/mts-sans/MTSSans-UltraWide.woff') format('woff'),
+  url('/assets/fonts/mts-sans/MTSSans-UltraWide.woff2') format('woff2');
+  font-display: swap;
+}

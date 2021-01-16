@@ -1,0 +1,11 @@
+@import '../../../styles/vars';
+
+.logo {
+  width: 64px;
+  height: 16px;
+  fill: $primaryColor;
+
+  &:hover {
+    height: 40px;
+  }
+}
