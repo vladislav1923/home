@@ -1,0 +1,14 @@
+@import '../../../styles/vars';
+
+.container {
+  box-shadow: 0 1px 1px $lightestBlackberryColor;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  width: 1280px;
+  height: 64px;
+  padding: 10px 32px;
+  margin: 0 auto;
+}

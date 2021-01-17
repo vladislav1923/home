@@ -1,7 +1,12 @@
+import styles from './main.module.scss';
+import { About } from './About';
+
 export function Main() {
   return (
     <>
-      <h1>Hello new landings</h1>
+      <div className={styles.about}>
+        <About />
+      </div>
     </>
   );
 }

@@ -1,0 +1,72 @@
+@import '../../../styles/vars';
+@import '../../../styles/typography';
+
+.container {
+  width: 1216px;
+  padding-bottom: 72px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  height: 536px;
+  width: 100%;
+  background-color: $whiteSmokeColor;
+  border-radius: 48px;
+}
+
+.contentLeft,
+.contentRight {
+  width: 521px;
+}
+
+.contentLeft {
+  margin: 112px 0 0 104px;
+}
+
+.contentRight {
+  position: relative;
+}
+
+.title {
+  @include ultraWideH1($pitchBlackColor);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  @include regularP1($pitchBlackColor);
+  margin-bottom: 24px;
+}
+
+.button {
+  width: 194px;
+  height: 44px;
+  background-color: $primaryColor;
+  margin-bottom: 148px;
+}
+
+.contact {
+  display: inline-flex;
+  align-items: center;
+}
+
+.contactIcon {
+  width: 12px;
+  height: 12px;
+  fill: $greyChateauColor;
+}
+
+.contactTitle {
+  display: inline-block;
+  @include mediumP3($greyChateauColor);
+  margin-left: 4px;
+}
+
+.image {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 558px;
+}
+

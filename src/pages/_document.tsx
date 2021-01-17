@@ -13,7 +13,6 @@ export default class MyDocument extends Document {
         <Head>
           <base href="/" />
           <meta charSet="utf-8" />
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta name="msapplication-TileColor" content="#E30611" />
           <meta name="theme-color" content="#ffffff" />
           <link rel="icon" type="image/x-icon" href="favicons/favicon.ico" />

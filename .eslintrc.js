@@ -24,6 +24,7 @@ module.exports = {
     "import/prefer-default-export": "off",
     "react/react-in-jsx-scope": "off",
     'react/jsx-filename-extension': [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "max-len": ["error", { "code": 140 }]
   },
 };

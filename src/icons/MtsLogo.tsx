@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 import { Icon } from '../interfaces';
 
 export const MtsLogo = ({ className }: Icon) => (

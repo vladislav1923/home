@@ -1,7 +1,7 @@
 import styles from './logo.module.scss';
 import { MtsLogo } from '../../../icons';
 
-type Props = {
+interface Props {
   name: string;
 }
 
