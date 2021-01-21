@@ -2,7 +2,7 @@
   "name": "home-frontend",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "ENV_ORIGIN=404-1 next",
     "build": "next build",
     "start": "next start",
     "lintTs": "eslint '*/**/*.{ts,tsx}' --quiet --fix",
@@ -15,11 +15,12 @@
     }
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
     "destyle.css": "^2.0.2",
     "next": "10.0.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "sass": "^1.32.4"
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
@@ -36,7 +37,8 @@
     "husky": "^4.3.8",
     "stylelint": "^13.8.0",
     "stylelint-order": "^4.1.0",
-    "typescript": "4.0"
+    "typescript": "4.0",
+    "sass": "^1.32.4"
   },
   "license": "MIT"
 }

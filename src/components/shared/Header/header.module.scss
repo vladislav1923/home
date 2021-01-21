@@ -1,4 +1,5 @@
 @import '../../../styles/vars';
+@import '../../../styles/typography';
 
 .container {
   box-shadow: 0 1px 1px $lightestBlackberryColor;
@@ -11,4 +12,25 @@
   height: 64px;
   padding: 10px 32px;
   margin: 0 auto;
+}
+
+.menu {
+  margin-left: 40px;
+}
+
+.menuItem {
+  @include regularP1($pitchBlackColor);
+  margin-right: 32px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    @include regularP1($primaryColor);
+  }
+}
+
+.menuItemActive {
+  @include regularP1($primaryColor);
 }
