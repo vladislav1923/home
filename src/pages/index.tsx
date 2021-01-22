@@ -3,13 +3,17 @@ import Head from 'next/head';
 import { Main } from '../components/Main';
 import { AuthUrls } from '../interfaces/AuthUrls';
 import { getAuthUrls } from '../services/auth';
+import { getActiveAbTests } from '../services/ab-test';
+import { AbTest } from '../interfaces/AbTest';
 
-type Data = {
-    authUrls: AuthUrls
+type Props = {
+    authUrls: AuthUrls,
+    abTests: AbTest[]
 }
 
-const IndexPage = ({ authUrls }: Data) => {
+const IndexPage = ({ authUrls, abTests }: Props) => {
   console.log(authUrls);
+  console.log(abTests);
 
   return (
     <>
@@ -24,11 +28,13 @@ const IndexPage = ({ authUrls }: Data) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await getAuthUrls();
+  const authUrls = await getAuthUrls();
+  const abTests = await getActiveAbTests();
 
   return {
     props: {
-      authUrls: response,
+      authUrls,
+      abTests,
     },
   };
 };

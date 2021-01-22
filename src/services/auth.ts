@@ -1,6 +1,7 @@
 import { get } from './http';
+import { AuthUrls } from '../interfaces/AuthUrls';
 
-const getAuthUrls = async () => get('login');
+const getAuthUrls = async (): Promise<AuthUrls> => get<AuthUrls>('login');
 
 export {
   getAuthUrls,
