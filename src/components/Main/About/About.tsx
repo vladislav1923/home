@@ -1,8 +1,14 @@
+import { useContext } from 'react';
 import styles from './about.module.scss';
 import { Phone } from '../../../icons/Phone';
 import { Image } from '../../ui-kit/Image';
+import { GlobalContext } from '../../../contexts/Global';
 
 export function About() {
+  const context = useContext(GlobalContext);
+
+  console.log('GlobalContext in About', context);
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -28,7 +34,12 @@ export function About() {
           </div>
         </div>
         <div className={styles.contentRight}>
-          <Image className={styles.image} src="/main/mms-example@1x.png" src2x="/main/mms-example@2x.png" alt="MMS Example" />
+          <Image
+            className={styles.image}
+            src="/main/mms-example@1x.png"
+            src2x="/main/mms-example@2x.png"
+            alt="MMS Example"
+          />
         </div>
       </div>
     </div>

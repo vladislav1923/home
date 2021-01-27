@@ -1,4 +1,4 @@
-import { AbTestStatuses } from '../enums/AbTestStatuses';
+import { AbTestStatuses } from '../enums/ab-test-statuses';
 
 export interface AbTest {
     id: number;
