@@ -1,4 +1,3 @@
-import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { Main } from '../components/Main';
 import { getAuthUrls } from '../services/auth';
@@ -15,7 +14,7 @@ const IndexPage = () => (
   </>
 );
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps = async () => {
   const authUrls = await getAuthUrls();
   const abTests = await getActiveAbTests();
 

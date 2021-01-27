@@ -2,9 +2,9 @@
   "name": "home-frontend",
   "version": "1.0.0",
   "scripts": {
-    "dev": "ENV_ORIGIN=404-1 next",
+    "dev": "ENV_HOST=404-1 next",
     "build": "next build",
-    "start": "next start",
+    "start": "ENV_HOST=404-1 next start",
     "lintTs": "eslint '*/**/*.{ts,tsx}' --quiet --fix",
     "lintStyles": "stylelint ./src/**/*.scss --fix",
     "lintAll": "npm run lintTs && npm run lintStyles"
