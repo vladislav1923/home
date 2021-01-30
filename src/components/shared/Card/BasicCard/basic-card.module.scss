@@ -1,0 +1,17 @@
+@import "src/styles/vars";
+@import "src/styles/typography";
+
+.card {
+  padding-bottom: 24px;
+}
+
+.title {
+  @include mediumP2($deepBlueColor);
+  white-space: pre-line;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  @include regularP3($deepBlueColor);
+  white-space: pre-line;
+}

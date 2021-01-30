@@ -1,0 +1,13 @@
+@import "src/styles/vars";
+
+.card {
+  width: 100%;
+  background-color: $whiteColor;
+  padding: 24px 24px 0 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px $lightestBlackberryColor;
+}
+
+.icon {
+  margin-bottom: 28px;
+}

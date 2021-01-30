@@ -1,0 +1,18 @@
+@import '../../../styles/vars';
+@import '../../../styles/typography';
+
+.titleH1 {
+  @include ultraWideH1($pitchBlackColor);
+  white-space: pre-line;
+}
+
+.titleH2 {
+  @include ultraWideH2($pitchBlackColor);
+  white-space: pre-line;
+}
+
+.subtitle {
+  @include regularP1($pitchBlackColor);
+  white-space: pre-line;
+  margin-top: 8px;
+}

@@ -1,0 +1,15 @@
+@import '../../../styles/vars';
+@import '../../../styles/typography';
+
+.button {
+  padding: 12px 32px;
+  background-color: $primaryColor;
+  border-radius: 8px;
+  text-align: center;
+
+  @include mediumP3($whiteColor);
+
+  &:hover {
+    background-color: $darkRaspberryColor;
+  }
+}

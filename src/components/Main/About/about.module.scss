@@ -30,19 +30,11 @@
 }
 
 .title {
-  @include ultraWideH1($pitchBlackColor);
-  margin-bottom: 8px;
-}
-
-.subtitle {
-  @include regularP1($pitchBlackColor);
   margin-bottom: 24px;
 }
 
 .button {
   width: 194px;
-  height: 44px;
-  background-color: $primaryColor;
   margin-bottom: 148px;
 }
 

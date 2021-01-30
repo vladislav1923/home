@@ -1,5 +1,5 @@
 import styles from './logo.module.scss';
-import { MtsLogo } from '../../../icons';
+import { MtsLogo } from '../../shared/icons';
 
 interface Props {
   name: string;

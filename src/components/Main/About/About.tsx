@@ -1,29 +1,26 @@
-import { useContext } from 'react';
+import { SyntheticEvent } from 'react';
 import styles from './about.module.scss';
-import { Phone } from '../../../icons/Phone';
+import { Phone } from '../../shared/icons';
 import { Image } from '../../ui-kit/Image';
-import { GlobalContext } from '../../../contexts/Global';
+import { Button } from '../../ui-kit/Button';
+import { Title } from '../../shared/Title';
 
 export function About() {
-  const context = useContext(GlobalContext);
-
-  console.log('GlobalContext in About', context);
-
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.contentLeft}>
-          <h1 className={styles.title}>
-            SMS-рассылки
-            {' '}
-            <br />
-            {' '}
-            для вашего бизнеса
-          </h1>
-          <p className={styles.subtitle}>
-            Привлекайте новых клиентов и продавайте больше постоянным с помощью массовых SMS-рассылок
-          </p>
-          <button type="button" className={styles.button}>Запустить рекламу</button>
+          <div className={styles.title}>
+            <Title
+              title={'SMS-рассылки \n для вашего бизнеса'}
+              titleTag="h1"
+              subtitle={'Привлекайте новых клиентов и продавайте больше \n постоянным с помощью массовых SMS-рассылок'}
+            />
+          </div>
+
+          <div className={styles.button}>
+            <Button onClick={(e: SyntheticEvent) => console.log(e)}>Запустить рекламу</Button>
+          </div>
           <div>
             <a href="tel:88002501111" className={styles.contact}>
               <Phone className={styles.contactIcon} />
