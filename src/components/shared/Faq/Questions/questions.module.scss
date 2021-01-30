@@ -1,0 +1,11 @@
+.list {
+  margin-bottom: 24px;
+}
+
+.item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

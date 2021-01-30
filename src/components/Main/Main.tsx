@@ -5,6 +5,7 @@ import { NoSpam } from '../shared/NoSpam';
 import { A2pPreview } from './A2pPreview';
 import { Support } from '../shared/Support';
 import { Price } from './Price';
+import { Faq } from '../shared/Faq';
 
 export function Main() {
   return (
@@ -32,6 +33,9 @@ export function Main() {
       </div>
       <div className={styles.price}>
         <Price />
+      </div>
+      <div className={styles.faq}>
+        <Faq />
       </div>
     </>
   );
