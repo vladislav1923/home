@@ -1,3 +1,6 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
 .list {
   margin-bottom: 24px;
 }
@@ -7,5 +10,45 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.orderList {
+  counter-reset: custom-counter;
+  margin-bottom: 12px;
+}
+
+.orderItem {
+  counter-increment: custom-counter;
+
+  &:before {
+    content: counter(custom-counter) ". ";
+    @include regularP1($pitchBlackColor);
+  }
+}
+
+.text {
+  @include regularP1($pitchBlackColor);
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.textBold {
+  @include mediumP1($pitchBlackColor);
+}
+
+.textMargin {
+  margin-left: 20px;
+}
+
+.link {
+  @include mediumP1($normalBlueberryColor);
+  margin: 0 4px;
+
+  &:hover {
+    color: $normalBlackberryColor;
   }
 }

@@ -2,9 +2,17 @@
 @import 'src/styles/typography';
 
 .anchor {
-  @include mediumP2($normalBlueberryColor);
+  vertical-align: baseline;
 
   &:hover {
     color: $normalBlackberryColor;
   }
+}
+
+.anchorSize18 {
+  @include mediumP1($normalBlueberryColor);
+}
+
+.anchorSize16 {
+  @include mediumP2($normalBlueberryColor);
 }
