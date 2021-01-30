@@ -1,0 +1,32 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: $normalAppleColor;
+  border-radius: 32px;
+  box-shadow: 0 2px 8px 0 $lightestBlackberryColor;
+  padding: 46px 40px;
+}
+
+.icon {
+  width: 112px;
+  height: 96px;
+  fill: $darkAppleColor;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.title {
+  @include ultraWideH2($whiteColor);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  @include regularP1($whiteColor);
+}

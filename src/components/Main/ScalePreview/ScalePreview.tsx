@@ -5,7 +5,7 @@ import { Chart, Profile, Wallet } from '../../shared/icons';
 
 export function ScalePreview() {
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.title}>
         <Title
           title={'Для поиска новых клиентов — \n таргетированные SMS-рассылки'}
@@ -31,6 +31,6 @@ export function ScalePreview() {
           </Card>
         </li>
       </ul>
-    </div>
+    </>
   );
 }

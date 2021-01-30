@@ -7,7 +7,6 @@ import { Title } from '../../shared/Title';
 
 export function About() {
   return (
-    <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.contentLeft}>
           <div className={styles.title}>
@@ -39,6 +38,5 @@ export function About() {
           />
         </div>
       </div>
-    </div>
   );
 }

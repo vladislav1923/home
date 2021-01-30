@@ -1,11 +1,5 @@
-@import '../../../styles/vars';
-@import '../../../styles/typography';
-
-.container {
-  width: 1216px;
-  padding-bottom: 72px;
-  margin: 0 auto;
-}
+@import 'src/styles/vars';
+@import 'src/styles/typography';
 
 .content {
   display: flex;
