@@ -1,0 +1,10 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.anchor {
+  @include mediumP2($normalBlueberryColor);
+
+  &:hover {
+    color: $normalBlackberryColor;
+  }
+}

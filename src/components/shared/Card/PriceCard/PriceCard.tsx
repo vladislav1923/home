@@ -1,7 +1,7 @@
 import styles from './price-card.module.scss';
 
 interface Props {
-    title: string;
+    title?: string;
     subtitle: string;
 }
 

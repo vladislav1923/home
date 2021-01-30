@@ -3,7 +3,8 @@ import { About } from './About';
 import { ScalePreview } from './ScalePreview';
 import { NoSpam } from '../shared/NoSpam';
 import { A2pPreview } from './A2pPreview';
-import {Support} from "../shared/Support";
+import { Support } from '../shared/Support';
+import { Price } from './Price';
 
 export function Main() {
   return (
@@ -23,9 +24,14 @@ export function Main() {
       </div>
       {/* A2pSteps */}
       <div className={styles.support}>
-          <Support subtitle={
-              `Наши менеджеры ответят на все вопросы по работе сервиса SMS-рассылок \n ` +
-              `и посоветуют другие инструменты, чтобы решить вашу бизнес-задачу`}/>
+        <Support subtitle={
+              'Наши менеджеры ответят на все вопросы по работе сервиса SMS-рассылок \n '
+              + 'и посоветуют другие инструменты, чтобы решить вашу бизнес-задачу'
+}
+        />
+      </div>
+      <div className={styles.price}>
+        <Price />
       </div>
     </>
   );

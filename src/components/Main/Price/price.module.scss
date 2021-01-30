@@ -1,0 +1,40 @@
+@import 'src/styles/vars';
+
+.title {
+  margin-bottom: 24px;
+}
+
+.cardsList {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.cardScale {
+  width: 384px;
+  margin-right: 32px;
+}
+
+.cardA2P {
+  width: 590px;
+}
+
+.card {
+  width: 280px;
+  margin-right: 32px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.cardPrices {
+  display: flex;
+}
+
+.cardPrices > *:first-child {
+  margin-right: 64px;
+}
+
+.link {
+  padding-left: 24px;
+}
