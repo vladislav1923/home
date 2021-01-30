@@ -1,8 +1,9 @@
 import styles from './main.module.scss';
 import { About } from './About';
 import { ScalePreview } from './ScalePreview';
-import {NoSpam} from "../shared/NoSpam";
-import {A2pPreview} from "./A2pPreview";
+import { NoSpam } from '../shared/NoSpam';
+import { A2pPreview } from './A2pPreview';
+import {Support} from "../shared/Support";
 
 export function Main() {
   return (
@@ -13,14 +14,19 @@ export function Main() {
       <div className={styles.scalePreview}>
         <ScalePreview />
       </div>
-        {/*ScaleSteps*/}
+      {/* ScaleSteps */}
       <div className={styles.noSpam}>
         <NoSpam />
       </div>
-        <div className={styles.a2pPreview}>
-            <A2pPreview/>
-        </div>
-        {/*A2pSteps*/}
+      <div className={styles.a2pPreview}>
+        <A2pPreview />
+      </div>
+      {/* A2pSteps */}
+      <div className={styles.support}>
+          <Support subtitle={
+              `Наши менеджеры ответят на все вопросы по работе сервиса SMS-рассылок \n ` +
+              `и посоветуют другие инструменты, чтобы решить вашу бизнес-задачу`}/>
+      </div>
     </>
   );
 }

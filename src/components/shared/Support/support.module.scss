@@ -1,0 +1,39 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $pitchBlackColor;
+  border-radius: 32px;
+  box-shadow: 0 2px 8px 0 $lightestBlackberryColor;
+  padding: 40px 112px 40px 56px;
+}
+
+.icon {
+  width: 112px;
+  height: 112px;
+  fill: $whiteColor;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.title {
+  @include ultraWideH2($whiteColor);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  @include regularP1($whiteColor);
+  white-space: pre-line;
+  margin-bottom: 24px;
+}
+
+.button {
+  width: 164px;
+}
