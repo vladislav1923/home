@@ -1,0 +1,28 @@
+@import "src/styles/vars";
+@import "src/styles/typography";
+
+.title {
+  margin-bottom: 32px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.item {
+  border: 2px solid $whiteSmokeColor;
+  border-radius: 8px;
+  padding: 12px 32px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.itemTitle {
+  @include mediumP3($greyChateauColor);
+}
+
+.button {
+  width: 194px;
+}

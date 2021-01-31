@@ -4,7 +4,7 @@ import { ScalePreview } from './ScalePreview';
 import { NoSpam } from '../shared/NoSpam';
 import { A2pPreview } from './A2pPreview';
 import { Support } from '../shared/Support';
-import { Price } from './Price';
+import { Price } from '../shared/Price';
 import { Faq } from '../shared/Faq';
 
 export function Main() {
@@ -27,8 +27,7 @@ export function Main() {
       <div className={styles.support}>
         <Support subtitle={
               'Наши менеджеры ответят на все вопросы по работе сервиса SMS-рассылок \n '
-              + 'и посоветуют другие инструменты, чтобы решить вашу бизнес-задачу'
-}
+              + 'и посоветуют другие инструменты, чтобы решить вашу бизнес-задачу'}
         />
       </div>
       <div className={styles.price}>

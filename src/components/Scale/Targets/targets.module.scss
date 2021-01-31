@@ -1,0 +1,39 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.title {
+  margin-bottom: 24px;
+}
+
+.cardsList {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  margin: 0 32px 24px 0;
+}
+
+.cardIcon {
+  width: 24px;
+  height: 24px;
+  fill: $pitchBlackColor;
+}
+
+.footnote {
+  display: flex;
+  align-items: center;
+}
+
+.footnoteIcon {
+  width: 12px;
+  height: 16px;
+  fill: $greyHeatherColor;
+}
+
+.footnoteText {
+  @include regularP4($greyHeatherColor);
+  margin-left: 8px;
+}

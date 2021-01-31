@@ -14,7 +14,7 @@ export function Support({ subtitle }: Props) {
         <p className={styles.title}>Всегда на связи</p>
         <p className={styles.subtitle}>{subtitle}</p>
         <div className={styles.button}>
-          <Button onClick={(e: SyntheticEvent) => console.log(e)}>Задать вопрос</Button>
+          <Button uniqName="Кнопка задать вопрос" onClick={(e: SyntheticEvent) => console.log(e)}>Задать вопрос</Button>
         </div>
       </div>
       <Phone className={styles.icon} />

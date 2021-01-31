@@ -1,5 +1,4 @@
 import { SyntheticEvent, useContext } from 'react';
-
 import Link from 'next/link';
 import { GlobalContext } from '../../../contexts/Global';
 import styles from './about.module.scss';

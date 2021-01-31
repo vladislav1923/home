@@ -9,3 +9,7 @@ export * from './Money';
 export * from './Email';
 export * from './View';
 export * from './Click';
+export * from './Settings';
+export * from './Geo';
+export * from './Scope';
+export * from './DataBase';

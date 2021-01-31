@@ -1,7 +1,7 @@
 import { SyntheticEvent } from 'react';
 import styles from './price.module.scss';
-import { Title } from '../../shared/Title';
-import { Card, PriceCard } from '../../shared/Card';
+import { Title } from '../Title';
+import { Card, PriceCard } from '../Card';
 import { Anchor } from '../../ui-kit/Anchor';
 
 export function Price() {
