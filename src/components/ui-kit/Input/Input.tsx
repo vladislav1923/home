@@ -32,23 +32,23 @@ export function Input(props: Props) {
   } = props;
 
   return (
-      <div className={styles.inputWrapper}>
-        <input
-            id={name}
-            className={styles.input}
-            type={type}
-            name={name}
-            ref={registerRef}
-            aria-required={isRequired}
-            aria-invalid={isError}
-            aria-disabled={isDisable}
-            disabled={isDisable}
-            placeholder={placeholder}
-            autoComplete={autocomplete}
-            data-uniq-name={uniqName}
-        />
-        {icon && <span className={styles.icon}>{icon}</span>}
-        {isError && <ErrorMessage>{errorMessage}</ErrorMessage>}
-      </div>
+    <div className={styles.inputWrapper}>
+      <input
+        id={name}
+        className={styles.input}
+        type={type}
+        name={name}
+        ref={registerRef}
+        aria-required={isRequired}
+        aria-invalid={isError}
+        aria-disabled={isDisable}
+        disabled={isDisable}
+        placeholder={placeholder}
+        autoComplete={autocomplete}
+        data-uniq-name={uniqName}
+      />
+      {icon && <span className={styles.icon}>{icon}</span>}
+      {isError && <ErrorMessage>{errorMessage}</ErrorMessage>}
+    </div>
   );
 }

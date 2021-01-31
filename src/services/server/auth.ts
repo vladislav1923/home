@@ -1,5 +1,5 @@
 import { get } from '../http';
-import {getServerOrigin} from "../../config";
+import { getServerOrigin } from '../../config';
 import { AuthUrls } from '../../interfaces/auth-urls';
 
 /**
@@ -7,9 +7,9 @@ import { AuthUrls } from '../../interfaces/auth-urls';
  * Используется на сервере
  */
 const getAuthUrls = async (): Promise<AuthUrls> => {
- const origin = getServerOrigin();
+  const origin = getServerOrigin();
 
- return get<AuthUrls>(`${origin}/login`);
+  return get<AuthUrls>(`${origin}/login`);
 };
 
 export {

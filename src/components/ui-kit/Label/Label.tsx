@@ -6,9 +6,9 @@ interface Props {
     isRequired?: boolean;
 }
 
-export const Label = ({name, title, isRequired}: Props) => (
-    <label htmlFor={name} className={styles.label}>
-        {title}
-        {isRequired && <sup className={styles.sup}>*</sup>}
-    </label>
-)
+export const Label = ({ name, title, isRequired }: Props) => (
+  <label htmlFor={name} className={styles.label}>
+    {title}
+    {isRequired && <sup className={styles.sup}>*</sup>}
+  </label>
+);

@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 import { ReactNode, SyntheticEvent } from 'react';
-import styles from './button.module.scss';
 import classNames from 'classnames';
+import styles from './button.module.scss';
 
 interface Props {
     children: ReactNode;
@@ -12,36 +12,38 @@ interface Props {
 }
 
 export function Button(props: Props) {
-    const {
-        type = 'button',
-        children,
-        isSpinner = false,
-        uniqName,
-        onClick,
-    } = props;
+  const {
+    type = 'button',
+    children,
+    isSpinner = false,
+    uniqName,
+    onClick,
+  } = props;
 
-    const spinnerClasses = classNames(
-        styles.button,
-        styles.spinner
-    )
+  const spinnerClasses = classNames(
+    styles.button,
+    styles.spinner,
+  );
 
-    return (
-        <>
-            {isSpinner &&
+  return (
+    <>
+      {isSpinner
+                && (
                 <div className={spinnerClasses}>
-                    loading ...
+                  loading ...
                 </div>
-            }
-            {!isSpinner &&
+                )}
+      {!isSpinner
+                && (
                 <button
-                    className={styles.button}
-                    type={type}
-                    data-uniq-name={uniqName}
-                    onClick={onClick}
+                  className={styles.button}
+                  type={type}
+                  data-uniq-name={uniqName}
+                  onClick={onClick}
                 >
-                    {children}
+                  {children}
                 </button>
-            }
-        </>
-    );
+                )}
+    </>
+  );
 }
