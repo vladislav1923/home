@@ -27,3 +27,8 @@
   height: 12px;
   fill: $greyHeatherColor;
 }
+
+.submittedMessage {
+  @include regularP1($greyChateauColor);
+  margin-top: 32px;
+}

@@ -2,6 +2,7 @@
 @import 'src/styles/typography';
 
 .message {
+  display: inline-block;
   @include regularP4($primaryColor);
   animation-name: show;
   animation-duration: .3s;

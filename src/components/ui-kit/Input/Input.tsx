@@ -6,7 +6,6 @@ interface Props {
     name: string;
     registerRef: Ref<HTMLInputElement>;
     type?: 'text' | 'password';
-    title?: string;
     isRequired?: boolean;
     isError?: boolean;
     isDisable?: boolean;
@@ -22,7 +21,6 @@ export function Input(props: Props) {
     name,
     registerRef,
     type = 'text',
-    title,
     isRequired = false,
     isError = false,
     isDisable = false,
@@ -34,32 +32,23 @@ export function Input(props: Props) {
   } = props;
 
   return (
-    <label htmlFor={name} className={styles.label}>
-      {title
-                && (
-                <span className={styles.title}>
-                  {title}
-                  {isRequired && <sup className={styles.sup}>*</sup>}
-                </span>
-                )}
-      <span className={styles.inputWrapper}>
+      <div className={styles.inputWrapper}>
         <input
-          id={name}
-          className={styles.input}
-          type={type}
-          name={name}
-          ref={registerRef}
-          aria-required={isRequired}
-          aria-invalid={isError}
-          aria-disabled={isDisable}
-          placeholder={placeholder}
-          autoComplete={autocomplete}
-          data-uniq-name={uniqName}
+            id={name}
+            className={styles.input}
+            type={type}
+            name={name}
+            ref={registerRef}
+            aria-required={isRequired}
+            aria-invalid={isError}
+            aria-disabled={isDisable}
+            disabled={isDisable}
+            placeholder={placeholder}
+            autoComplete={autocomplete}
+            data-uniq-name={uniqName}
         />
         {icon && <span className={styles.icon}>{icon}</span>}
-      </span>
-
-      {isError && <ErrorMessage>{errorMessage}</ErrorMessage>}
-    </label>
+        {isError && <ErrorMessage>{errorMessage}</ErrorMessage>}
+      </div>
   );
 }

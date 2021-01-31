@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { Main } from '../components/Main';
-import { getAuthUrls } from '../services/auth';
-import { getActiveAbTests } from '../services/ab-test';
+import { getAuthUrls } from '../services/server/auth';
+import { getActiveAbTests } from '../services/server/ab-test';
 
 const IndexPage = () => (
   <>

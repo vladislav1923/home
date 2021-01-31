@@ -1,0 +1,15 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.label {
+  display: inline-block;
+  @include regularP3($greyChateauColor);
+  margin-bottom: 4px;
+}
+
+.sup {
+  font-size: 14px;
+  color: $primaryColor;
+  margin-left: 4px;
+  top: -1.5px;
+}

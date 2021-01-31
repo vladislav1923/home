@@ -1,7 +1,7 @@
 const hosts = new Map()
   .set('404-1', 'http://192.168.13.50:9030');
 
-export const getApiOrigin = (): string => {
+const getServerOrigin = (): string => {
   const host = process.env.ENV_HOST;
   const origin = hosts.get(host);
 
@@ -10,5 +10,14 @@ export const getApiOrigin = (): string => {
     process.exit(1);
   }
 
-  return origin;
+  return `${origin}/backend/rest`;
 };
+
+const getClientOrigin = (): string => {
+    return `${document.location.origin}/api`;
+};
+
+export {
+    getServerOrigin,
+    getClientOrigin,
+}
