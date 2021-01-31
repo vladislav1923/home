@@ -1,0 +1,29 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.form {
+  padding: 24px 32px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px $lightestBlackberryColor;
+  background-color: $whiteColor;
+}
+
+.title {
+  @include mediumP2($deepBlueColor);
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  @include regularP2($deepBlueColor);
+  margin-bottom: 24px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.icon {
+  width: 16px;
+  height: 12px;
+  fill: $greyHeatherColor;
+}

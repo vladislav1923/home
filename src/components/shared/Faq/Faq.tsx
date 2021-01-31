@@ -1,6 +1,7 @@
 import styles from './faq.module.scss';
 import { Title } from '../Title';
 import { Questions } from './Questions';
+import { PresentationForm } from './PresentationForm';
 
 export function Faq() {
   return (
@@ -14,7 +15,7 @@ export function Faq() {
         </div>
         <div className={styles.contentRight}>
           <div className={styles.presentation}>
-            presentation
+            <PresentationForm />
           </div>
           call me
         </div>

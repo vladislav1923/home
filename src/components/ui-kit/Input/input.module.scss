@@ -1,0 +1,46 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.label {
+  display: block;
+}
+
+.title {
+  display: inline-block;
+  @include regularP3($greyChateauColor);
+  margin-bottom: 4px;
+}
+
+.sup {
+  font-size: 14px;
+  color: $primaryColor;
+  margin-left: 4px;
+  top: -1.5px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  border: 2px solid $linkWaterColor;
+  border-radius: 8px;
+  background-color: $whiteColor;
+  padding: 10px 16px;
+  @include regularP2($deepBlueColor);
+}
+
+.input[aria-invalid='true'] {
+  border-color: $primaryColor;
+  transition: border .3s;
+}
+
+.icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}

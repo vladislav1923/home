@@ -1,0 +1,19 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.message {
+  @include regularP4($primaryColor);
+  animation-name: show;
+  animation-duration: .3s;
+  margin-top: 4px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

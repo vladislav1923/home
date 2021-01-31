@@ -85,7 +85,8 @@ export function Questions() {
               {' '}
               и пишем подробные инструкции в
               {' '}
-              <Anchor type="anchor" size={18} href="https://support.mts.ru/mts_marketolog">Справке</Anchor>.
+              <Anchor type="anchor" size={18} href="https://support.mts.ru/mts_marketolog">Справке</Anchor>
+              .
               Всегда ответим на вопросы по телефону:
               {' '}
               <Anchor type="anchor" size={18} href="tel:88002501111"> 8 800 250 11 11 </Anchor>
