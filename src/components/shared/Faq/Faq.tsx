@@ -2,6 +2,7 @@ import styles from './faq.module.scss';
 import { Title } from '../Title';
 import { Questions } from './Questions';
 import { PresentationForm } from './PresentationForm';
+import { Consultation } from './Consultation';
 
 export function Faq() {
   return (
@@ -17,7 +18,9 @@ export function Faq() {
           <div className={styles.presentation}>
             <PresentationForm />
           </div>
-          call me
+          <div className={styles.consultation}>
+            <Consultation />
+          </div>
         </div>
       </div>
     </>

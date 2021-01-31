@@ -9,8 +9,8 @@ interface GlobalContextData {
 
 const initialState = {
   authUrls: {
-    loginUrl: '',
-    logoutUrl: '',
+    login: '',
+    logout: '',
   },
   abTests: [],
 };

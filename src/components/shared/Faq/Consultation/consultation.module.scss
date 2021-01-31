@@ -1,0 +1,11 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.title {
+  @include regularP3($greyRavenColor);
+  margin-bottom: 4px;
+}
+
+.phone {
+  @include mediumH2($deepBlueColor);
+}

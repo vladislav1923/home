@@ -4,7 +4,7 @@ import styles from './presentation-form.module.scss';
 import { sendPresentation } from '../../../../services/client/presentation';
 import { Button } from '../../../ui-kit/Button';
 import { Input } from '../../../ui-kit/Input';
-import { Email } from '../../icons/Email';
+import { Email } from '../../icons';
 import { Feedback } from '../../../../interfaces/feedback';
 import { emailErrorMessages, emailPattern } from '../../../../utils/validation';
 

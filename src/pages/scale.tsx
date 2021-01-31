@@ -1,16 +1,16 @@
 import Head from 'next/head';
-import { Main } from '../components/Main';
 import { getAuthUrls } from '../services/server/auth';
 import { getActiveAbTests } from '../services/server/ab-test';
+import { Scale } from '../components/Scale';
 
-const IndexPage = () => (
+const ScalePage = () => (
   <>
     <Head>
-      <title>Мтс маркетолог - Index</title>
+      <title>Мтс маркетолог - Scale</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="MAAAAAS" />
     </Head>
-    <Main />
+    <Scale />
   </>
 );
 
@@ -26,4 +26,4 @@ export const getServerSideProps = async () => {
   };
 };
 
-export default IndexPage;
+export default ScalePage;

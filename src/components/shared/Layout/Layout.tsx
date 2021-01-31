@@ -19,7 +19,6 @@ export function Layout(props: Props) {
       </main>
       <footer className={styles.footer}>
         Футер
-        {/* <Footer/> */}
       </footer>
     </div>
   );

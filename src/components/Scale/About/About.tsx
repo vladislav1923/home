@@ -1,9 +1,7 @@
 import { SyntheticEvent, useContext } from 'react';
-
 import Link from 'next/link';
-import { GlobalContext } from '../../../contexts/Global';
 import styles from './about.module.scss';
-import { Phone } from '../../shared/icons';
+import { GlobalContext } from '../../../contexts/Global';
 import { Image } from '../../ui-kit/Image';
 import { Button } from '../../ui-kit/Button';
 import { Title } from '../../shared/Title';
@@ -11,15 +9,15 @@ import { Title } from '../../shared/Title';
 export function About() {
   const { authUrls } = useContext(GlobalContext);
   const { login } = authUrls;
-
   return (
     <div className={styles.content}>
       <div className={styles.contentLeft}>
         <div className={styles.title}>
           <Title
-            title={'SMS-рассылки \n для вашего бизнеса'}
+            title={'Таргетированные \n SMS-рассылки для \n бизнеса'}
             titleTag="h1"
-            subtitle={'Привлекайте новых клиентов и продавайте больше \n постоянным с помощью массовых SMS-рассылок'}
+            subtitle={'Самостоятельно запускайте рассылки в личном \n кабинете. '
+            + 'Ваши сообщения получит только целевая \n аудитория, в нужном месте и вовремя'}
           />
         </div>
 
@@ -33,14 +31,13 @@ export function About() {
             </Button>
           </Link>
         </div>
-        <div>
-          <a href="tel:88002501111" className={styles.contact}>
-            <Phone className={styles.contactIcon} />
-            <span className={styles.contactTitle}>
-              Бесплатная консультация 8 800 250-11-11
-            </span>
-          </a>
-        </div>
+        <p className={styles.footnote}>
+          Без минимального бюджета и пакетов услуг.
+          {' '}
+          <br />
+          {' '}
+          Бесплатное имя отправителя
+        </p>
       </div>
       <div className={styles.contentRight}>
         <Image
