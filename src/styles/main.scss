@@ -1,7 +1,9 @@
 @import '../../node_modules/destyle.css/destyle.css';
+@import './vars';
 
 body {
     min-height: 100vh;
+    min-width: $mobileWidth;
     margin: 0;
     padding: 0;
 }

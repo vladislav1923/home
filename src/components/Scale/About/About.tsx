@@ -42,8 +42,8 @@ export function About() {
       <div className={styles.contentRight}>
         <Image
           className={styles.image}
-          src="/main/mms-example@1x.png"
-          src2x="/main/mms-example@2x.png"
+          src="/main/about@1x.png"
+          src2x="/main/about@2x.png"
           alt="MMS Example"
         />
       </div>

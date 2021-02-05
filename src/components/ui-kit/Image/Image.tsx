@@ -1,12 +1,12 @@
 interface Props {
     src: string;
     src2x: string;
-    alt: string;
+    alt?: string;
     className: string;
 }
 
 export function Image({
-  src, src2x, className, alt,
+  src, src2x, className, alt = '',
 }: Props) {
   return (
     <img

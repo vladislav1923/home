@@ -1,9 +1,14 @@
 @import 'src/styles/vars';
 @import 'src/styles/typography';
+@import 'src/styles/viewport';
 
 .titleH1 {
   @include ultraWideH1($pitchBlackColor);
   white-space: pre-line;
+
+  @include mobile {
+    @include ultraWideH2($pitchBlackColor);
+  }
 }
 
 .titleH2 {
@@ -15,4 +20,8 @@
   @include regularP1($pitchBlackColor);
   margin-top: 8px;
   white-space: pre-line;
+
+  @include mobile {
+    @include regularP2($pitchBlackColor);
+  }
 }

@@ -1,0 +1,17 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+
+.link {
+  display: block;
+  width: 100%;
+  padding: 12px 32px;
+  border-radius: 8px;
+  background-color: $primaryColor;
+  text-align: center;
+
+  @include mediumP3($whiteColor);
+
+  &:hover {
+    background-color: $darkRaspberryColor;
+  }
+}

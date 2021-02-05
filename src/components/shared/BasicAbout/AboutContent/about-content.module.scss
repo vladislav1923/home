@@ -1,0 +1,78 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+@import 'src/styles/viewport';
+
+.content {
+  width: 521px;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+
+  @include mobile {
+    margin-bottom: 16px;
+  }
+}
+
+.button {
+  width: 248px;
+  margin-bottom: 32px;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.advantageText {
+  @include regularP4($greyChateauColor);
+  white-space: pre-line;
+  margin-bottom: 84px;
+
+  @include mobile {
+    margin-bottom: 0;
+  }
+}
+
+.contact {
+  display: inline-flex;
+  align-items: center;
+
+  @include mobile {
+    width: 160px;
+    align-items: flex-start;
+  }
+}
+
+.contactIcon {
+  width: 12px;
+  height: 12px;
+  fill: $greyChateauColor;
+
+  @include mobile {
+    margin-top: 2px;
+  }
+}
+
+.contactTitle {
+  display: inline-block;
+  @include mediumP3($greyChateauColor);
+  margin-left: 4px;
+
+  @include mobile {
+    @include regularP4($greyChateauColor);
+  }
+}
+
+.imageInFlow {
+  display: none;
+  width: 100%;
+
+  @include mobile {
+    display: block;
+  }
+}
+

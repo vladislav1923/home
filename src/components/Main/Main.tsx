@@ -1,5 +1,5 @@
 import styles from './main.module.scss';
-import { About } from './About';
+import { BasicAbout } from '../shared/BasicAbout';
 import { ScalePreview } from './ScalePreview';
 import { NoSpam } from '../shared/NoSpam';
 import { A2pPreview } from './A2pPreview';
@@ -11,7 +11,14 @@ export function Main() {
   return (
     <>
       <div className={styles.about}>
-        <About />
+        <BasicAbout
+            image1xUrl="/main/about@1x.png"
+            image2xUrl="/main/about@2x.png"
+            title={'SMS-рассылки \n для вашего бизнеса'}
+            subtitle={'Привлекайте новых клиентов и продавайте больше постоянным с помощью массовых SMS-рассылок'}
+            advantageText={'Без минимального бюджета и пакетов услуг. \n Бесплатное имя отправителя'}
+            buttonText="Запустить рекламу"
+        />
       </div>
       <div className={styles.scalePreview}>
         <ScalePreview />
