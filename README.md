@@ -1,41 +1,51 @@
-# TypeScript Next.js example
+# Веб-приложение внешней части МТС Маркетолог (лендинги, блог, обучение)
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+## Стэк
 
-## Deploy your own
+* [NextJS](https://nextjs.org/)
+* [Typescript](https://www.typescriptlang.org/)
+* [ReactJS](https://reactjs.org/)
+* [React Hook Form](https://react-hook-form.com/)
+* [CSS Modules](https://github.com/css-modules/css-modules)
+* [SASS](https://sass-lang.com/)
+* [Eslint](https://eslint.org/)
+* [Stylelint](https://stylelint.io/)
 
-Deploy the example using [Vercel](https://vercel.com):
+## Запуск
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
-
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Локально
 
 ```bash
-npx create-next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
+npm run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+На сервере
 
-## Notes
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
+```bash
+npm run build 
+ 
+npm run start
 ```
 
-To enable TypeScript's features, we install the type declarations for React and Node.
+## Разработка
 
+### Именование файлов
+
+* tsx - PascalCase
+* ts, js, scss, json - kebab-case
+
+### React
+
+React компоненты пишем в функциональном стиле и с использованием [хуков](https://ru.reactjs.org/docs/hooks-intro.html). 
+Для написания форм используем [React Hook Form](https://react-hook-form.com/). 
+Компоненты форм оформляем согласно [требованиям доступности](http://web-accessibility.carnegiemuseums.org/code/forms/). 
+
+### Стили
+
+Код стилей пишем в CSS модулях (*.module.scss) для изоляции области видимости и удобного доступа из компонентов. 
+Имя класса формируется по паттерну:
+```bash
+ <имя_компонента>_<имя_css_класса>__<5_случайных_символов_base64>
 ```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+Для форматирования стилей используется [Stylelint](https://stylelint.io/) и 
+[библиотека для сортировки стилей](https://www.npmjs.com/package/stylelint-config-property-sort-order-smacss) 
