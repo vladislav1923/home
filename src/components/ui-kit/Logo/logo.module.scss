@@ -8,14 +8,14 @@
 
 .icon {
   height: 18px;
-  fill: $primaryColor;
   margin-right: 8px;
+  fill: $primaryColor;
 }
 
 .name {
-  font-family: $mtsSansRegular;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
   color: $primaryColor;
+  font-family: $mtsSansRegular;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
 }

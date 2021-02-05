@@ -3,10 +3,10 @@
 
 .message {
   display: inline-block;
-  @include regularP4($primaryColor);
+  margin-top: 4px;
   animation-name: show;
   animation-duration: .3s;
-  margin-top: 4px;
+  @include regularP4($primaryColor);
 }
 
 @keyframes show {

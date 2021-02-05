@@ -5,29 +5,29 @@ $mtsSansUltraWide: 'MTSSans-UltraWide', sans-serif;
 
 @mixin main($color) {
     color: $color;
-    font-style: normal;
     font-stretch: normal;
+    font-style: normal;
     letter-spacing: -0.1px;
 }
 
 @mixin regular {
-    font-weight: 400;
     font-family: $mtsSansRegular;
+    font-weight: 400;
 }
 
 @mixin medium {
-    font-weight: 500;
     font-family: $mtsSansMedium;
+    font-weight: 500;
 }
 
 @mixin bold {
-    font-weight: 700;
     font-family: $mtsSansBold;
+    font-weight: 700;
 }
 
 @mixin ultraWide {
-    font-weight: 900;
     font-family: $mtsSansUltraWide;
+    font-weight: 900;
 }
 
 @mixin h1 {
@@ -163,7 +163,7 @@ $mtsSansUltraWide: 'MTSSans-UltraWide', sans-serif;
 
 @mixin ellipsisText() {
     overflow: hidden;
+    text-overflow: ellipsis;
 
     white-space: nowrap;
-    text-overflow: ellipsis;
 }

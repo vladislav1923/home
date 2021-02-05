@@ -12,11 +12,11 @@
 }
 
 .item {
-  border: 2px solid $whiteSmokeColor;
-  border-radius: 8px;
-  padding: 12px 32px;
   margin-right: 16px;
   margin-bottom: 16px;
+  padding: 12px 32px;
+  border: 2px solid $whiteSmokeColor;
+  border-radius: 8px;
 }
 
 .itemTitle {

@@ -7,8 +7,8 @@
 
 .title {
   @include mediumP2($deepBlueColor);
-  white-space: pre-line;
   margin-bottom: 4px;
+  white-space: pre-line;
 }
 
 .subtitle {

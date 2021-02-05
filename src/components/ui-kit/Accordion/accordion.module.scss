@@ -2,15 +2,15 @@
 @import "src/styles/typography";
 
 .accordion {
-  background-color: $whiteSmokeColor;
-  border-radius: 8px;
-  overflow: hidden;
   height: 56px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: $whiteSmokeColor;
 }
 
 .accordionOpen {
-  overflow: auto;
   height: auto;
+  overflow: auto;
 
   .arrow {
     transform: rotate(180deg);
@@ -19,11 +19,11 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  justify-content: space-between;
   width: 100%;
   height: 56px;
+  padding: 16px 24px;
   cursor: pointer;
 }
 
@@ -37,8 +37,8 @@
 .arrow {
   width: 14px;
   height: 7px;
-  fill: $greyHeatherColor;
   transition: transform .2s;
+  fill: $greyHeatherColor;
 }
 
 .content {

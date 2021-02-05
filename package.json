@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "ENV_HOST=404-1 next start",
     "lintTs": "eslint '*/**/*.{ts,tsx}' --quiet --fix",
-    "lintStyles": "stylelint ./src/**/*.scss --fix",
+    "lintStyles": "stylelint ./src/**/*.module.scss --fix",
     "lintAll": "npm run lintTs && npm run lintStyles"
   },
   "husky": {
@@ -37,10 +37,11 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.8",
+    "sass": "^1.32.4",
     "stylelint": "^13.8.0",
+    "stylelint-config-property-sort-order-smacss": "^7.0.0",
     "stylelint-order": "^4.1.0",
-    "typescript": "4.0",
-    "sass": "^1.32.4"
+    "typescript": "4.0"
   },
   "license": "MIT"
 }

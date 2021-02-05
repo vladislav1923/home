@@ -13,6 +13,6 @@
 
 .subtitle {
   @include regularP1($pitchBlackColor);
-  white-space: pre-line;
   margin-top: 8px;
+  white-space: pre-line;
 }

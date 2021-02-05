@@ -2,15 +2,15 @@
 
 .layout {
   display: flex;
+  position: relative;
   flex-direction: column;
   min-height: 100vh;
-  position: relative;
 }
 
 .header {
   position: sticky;
-  top: 0;
   z-index: 1;
+  top: 0;
 }
 
 .main {
