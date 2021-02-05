@@ -14,8 +14,8 @@
 .background {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   width: 100%;
   height: 536px;
   border-radius: 48px;
@@ -26,8 +26,8 @@
   }
 
   @include mobile {
-    border-radius: 0;
     height: 596px;
+    border-radius: 0;
   }
 }
 
@@ -40,14 +40,14 @@
   position: absolute;
   top: 0;
   right: 24px;
-  height: 702px;
   width: 702px;
+  height: 702px;
 
   @include tablet {
-    height: 512px;
     top: 164px;
-    width: 512px;
     right: -16px;
+    width: 512px;
+    height: 512px;
   }
 
   @include mobile {

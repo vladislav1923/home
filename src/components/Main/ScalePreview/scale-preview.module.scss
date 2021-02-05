@@ -1,16 +1,23 @@
 @import 'src/styles/vars';
+@import 'src/styles/viewport';
 
 .title {
-  margin-bottom: 48px;
+  width: 534px;
+  margin-bottom: 24px;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .cardsList {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
   width: 280px;
-  margin-right: 32px;
+  margin: 24px 32px 0 0;
 
   &:last-child {
     margin-right: 0;

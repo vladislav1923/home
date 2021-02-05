@@ -7,25 +7,49 @@
 
   @include tablet {
     width: 100%;
-    padding: 24px 32px 0;
     margin: 0 0 132px;
+    padding: 24px 32px 0;
   }
 
   @include mobile {
     width: 100%;
-    padding: 24px 0 0 0;
     margin: 0 0 44px;
+    padding: 24px 0 0 0;
   }
 }
 
 .scalePreview {
   width: 1008px;
   margin: 0 auto 80px;
+
+  @include tablet {
+    width: 100%;
+    margin: 0 0 88px;
+    padding: 0 32px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin: 0 0 52px;
+    padding: 0 20px;
+  }
 }
 
 .noSpam {
   width: 1008px;
   margin: 0 auto 88px;
+
+  @include tablet {
+    width: 100%;
+    margin: 0 0 88px;
+    padding: 0 32px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin: 0 0 40px;
+    padding: 0 20px;
+  }
 }
 
 .a2pPreview {

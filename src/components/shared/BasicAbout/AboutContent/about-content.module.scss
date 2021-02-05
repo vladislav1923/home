@@ -29,8 +29,8 @@
 
 .advantageText {
   @include regularP4($greyChateauColor);
-  white-space: pre-line;
   margin-bottom: 84px;
+  white-space: pre-line;
 
   @include mobile {
     margin-bottom: 0;
@@ -42,8 +42,8 @@
   align-items: center;
 
   @include mobile {
-    width: 160px;
     align-items: flex-start;
+    width: 160px;
   }
 }
 

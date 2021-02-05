@@ -1,5 +1,6 @@
 @import 'src/styles/vars';
 @import 'src/styles/typography';
+@import 'src/styles/viewport';
 
 .card {
   display: flex;
@@ -8,6 +9,15 @@
   border-radius: 32px;
   background-color: $normalAppleColor;
   box-shadow: 0 2px 8px 0 $lightestBlackberryColor;
+
+  @include tablet {
+    padding: 46px 32px;
+  }
+
+  @include mobile {
+    flex-direction: column-reverse;
+    padding: 32px 20px 48px;
+  }
 }
 
 .icon {
@@ -19,14 +29,29 @@
 .content {
   display: flex;
   flex-direction: column;
+  width: 500px;
   margin-left: 32px;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
 }
 
 .title {
   @include ultraWideH2($whiteColor);
   margin-bottom: 8px;
+
+  @include mobile {
+    @include ultraWideH3($whiteColor);
+  }
 }
 
 .subtitle {
   @include regularP1($whiteColor);
 }
+

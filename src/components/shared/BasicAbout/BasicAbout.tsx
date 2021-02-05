@@ -1,6 +1,6 @@
 import styles from './basic-about.module.scss';
 import { Image } from '../../ui-kit/Image';
-import {AboutContent} from "./AboutContent";
+import { AboutContent } from './AboutContent';
 
 interface Props {
     image1xUrl: string;
@@ -12,15 +12,15 @@ interface Props {
 }
 
 export function BasicAbout(props: Props) {
-  const {image1xUrl, image2xUrl} = props;
+  const { image1xUrl, image2xUrl } = props;
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.background}></div>
+      <div className={styles.background} />
       <div className={styles.content}>
-          <AboutContent {...props} />
+        <AboutContent {...props} />
       </div>
-      <Image className={styles.imageOutFlow} src={image1xUrl} src2x={image2xUrl}/>
+      <Image className={styles.imageOutFlow} src={image1xUrl} src2x={image2xUrl} />
     </div>
   );
 }

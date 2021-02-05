@@ -9,8 +9,6 @@ export function NoSpam() {
         <p className={styles.title}>Без спама</p>
         <p className={styles.subtitle}>
           Отправляем сообщения только тем, кто дал на это согласие.
-          {' '}
-          <br />
           Одному человеку — не чаще четырёх раз в месяц
         </p>
       </div>

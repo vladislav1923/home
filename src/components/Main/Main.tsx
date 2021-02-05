@@ -12,12 +12,12 @@ export function Main() {
     <>
       <div className={styles.about}>
         <BasicAbout
-            image1xUrl="/main/about@1x.png"
-            image2xUrl="/main/about@2x.png"
-            title={'SMS-рассылки \n для вашего бизнеса'}
-            subtitle={'Привлекайте новых клиентов и продавайте больше постоянным с помощью массовых SMS-рассылок'}
-            advantageText={'Без минимального бюджета и пакетов услуг. \n Бесплатное имя отправителя'}
-            buttonText="Запустить рекламу"
+          image1xUrl="/main/about@1x.png"
+          image2xUrl="/main/about@2x.png"
+          title={'SMS-рассылки \n для вашего бизнеса'}
+          subtitle="Привлекайте новых клиентов и продавайте больше постоянным с помощью массовых SMS-рассылок"
+          advantageText={'Без минимального бюджета и пакетов услуг. \n Бесплатное имя отправителя'}
+          buttonText="Запустить рекламу"
         />
       </div>
       <div className={styles.scalePreview}>

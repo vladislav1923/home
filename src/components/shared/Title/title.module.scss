@@ -14,6 +14,10 @@
 .titleH2 {
   @include ultraWideH2($pitchBlackColor);
   white-space: pre-line;
+
+  @include mobile {
+    @include ultraWideH3($pitchBlackColor);
+  }
 }
 
 .subtitle {
