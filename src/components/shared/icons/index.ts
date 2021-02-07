@@ -13,3 +13,6 @@ export * from './Settings';
 export * from './Geo';
 export * from './Scope';
 export * from './DataBase';
+export * from './Message';
+export * from './Like';
+export * from './Programmatic';

@@ -1,11 +1,10 @@
 import styles from './main.module.scss';
 import { BasicAbout } from '../shared/BasicAbout';
-import { ScalePreview } from './ScalePreview';
-import { NoSpam } from '../shared/NoSpam';
-import { A2pPreview } from './A2pPreview';
-import { Support } from '../shared/Support';
-import { Price } from '../shared/Price';
 import { Faq } from '../shared/Faq';
+import { Cabinet } from './Cabinet';
+import { Targeting } from './Targeting';
+import { Support } from '../shared/Support';
+import { Settings } from '../shared/icons';
 
 export function Main() {
   return (
@@ -14,32 +13,24 @@ export function Main() {
         <BasicAbout
           image1xUrl="/main/about@1x.png"
           image2xUrl="/main/about@2x.png"
-          title={'SMS-рассылки \n для вашего бизнеса'}
-          subtitle="Привлекайте новых клиентов и продавайте больше постоянным с помощью массовых SMS-рассылок"
-          advantageText={'Без минимального бюджета и пакетов услуг. \n Бесплатное имя отправителя'}
+          title="Найдите клиентов среди абонентов МТС"
+          subtitle={'SMS-рассылки, баннеры в мобильных браузерах \n и реклама в соцсетях'}
           buttonText="Запустить рекламу"
         />
       </div>
-      <div className={styles.scalePreview}>
-        <ScalePreview />
+      <div className={styles.cabinet}>
+        <Cabinet />
       </div>
-      {/* ScaleSteps */}
-      <div className={styles.noSpam}>
-        <NoSpam />
+      <div className={styles.targeting}>
+        <Targeting />
       </div>
-      <div className={styles.a2pPreview}>
-        <A2pPreview />
-      </div>
-      {/* A2pSteps */}
       <div className={styles.support}>
-        <Support subtitle={
-              'Наши менеджеры ответят на все вопросы по работе сервиса SMS-рассылок \n '
-              + 'и посоветуют другие инструменты, чтобы решить вашу бизнес-задачу'
-}
+        <Support
+          title="Не знаете с чего начать?"
+          subtitle="Ответим на вопросы и поможем настроить вашу первую рекламную кампанию"
+          buttonText="Оставить заявку"
+          icon={<Settings className={styles.supportIcon} />}
         />
-      </div>
-      <div className={styles.price}>
-        <Price />
       </div>
       <div className={styles.faq}>
         <Faq />

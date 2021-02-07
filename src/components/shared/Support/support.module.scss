@@ -1,5 +1,6 @@
 @import 'src/styles/vars';
 @import 'src/styles/typography';
+@import 'src/styles/viewport';
 
 .card {
   display: flex;
@@ -9,31 +10,47 @@
   border-radius: 32px;
   background-color: $pitchBlackColor;
   box-shadow: 0 2px 8px 0 $lightestBlackberryColor;
+
+  @include tablet {
+    padding: 40px 56px 32px 40px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    padding: 32px 20px 40px;
+  }
 }
 
 .icon {
-  min-width: 112px;
+  width: 112px;
   height: 112px;
   fill: $whiteColor;
+
+  svg {
+    min-width: 112px;
+    height: 112px;
+    fill: $whiteColor;
+  }
 }
 
 .content {
   display: flex;
   flex-direction: column;
   margin-right: 32px;
+
+  @include mobile {
+    margin: 0 0 40px 0;
+  }
 }
 
 .title {
-  @include ultraWideH2($whiteColor);
-  margin-bottom: 8px;
-}
-
-.subtitle {
-  @include regularP1($whiteColor);
   margin-bottom: 24px;
-  white-space: pre-line;
 }
 
 .button {
-  width: 164px;
+  width: 176px;
+
+  @include mobile {
+    width: 100%;
+  }
 }

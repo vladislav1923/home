@@ -7,7 +7,7 @@ interface Props {
     image2xUrl: string;
     title: string;
     subtitle: string;
-    advantageText: string;
+    advantageText?: string;
     buttonText: string;
 }
 

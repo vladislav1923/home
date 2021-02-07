@@ -1,23 +1,38 @@
-import { SyntheticEvent } from 'react';
+import { ReactNode } from 'react';
 import styles from './support.module.scss';
-import { Phone } from '../icons';
 import { Button } from '../../ui-kit/Button';
+import { Title } from '../Title';
 
 interface Props {
+    title: string;
     subtitle: string;
+    buttonText: string;
+    icon: ReactNode;
+    onClick?: () => void;
 }
 
-export function Support({ subtitle }: Props) {
+export function Support(props: Props) {
+  const {
+    title, subtitle, buttonText, icon, onClick,
+  } = props;
+
   return (
     <div className={styles.card}>
       <div className={styles.content}>
-        <p className={styles.title}>Всегда на связи</p>
-        <p className={styles.subtitle}>{subtitle}</p>
+        <div className={styles.title}>
+          <Title
+            title={title}
+            subtitle={subtitle}
+            color="white"
+          />
+        </div>
         <div className={styles.button}>
-          <Button uniqName="Кнопка задать вопрос" onClick={(e: SyntheticEvent) => console.log(e)}>Задать вопрос</Button>
+          <Button uniqName={`Кнопка ${buttonText}`} onClick={onClick}>{buttonText}</Button>
         </div>
       </div>
-      <Phone className={styles.icon} />
+      <div className={styles.icon}>
+        {icon}
+      </div>
     </div>
   );
 }

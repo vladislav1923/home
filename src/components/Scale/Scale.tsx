@@ -6,6 +6,7 @@ import { Business } from './Business/Business';
 import { Targets } from './Targets/Targets';
 import { Support } from '../shared/Support';
 import { Price } from '../shared/Price';
+import { Phone } from '../shared/icons';
 import { Faq } from '../shared/Faq';
 
 export function Scale() {
@@ -29,10 +30,14 @@ export function Scale() {
         <Targets />
       </div>
       <div className={styles.support}>
-        <Support subtitle={
+        <Support
+          title="Всегда на связи"
+          subtitle={
                 'Наши менеджеры ответят на все вопросы по работе сервиса SMS-рассылок \n'
                 + 'и посоветуют другие инструменты, чтобы решить вашу бизнес-задачу'
 }
+          buttonText="Задать вопрос"
+          icon={<Phone className={styles.supportIcon} />}
         />
       </div>
       <div className={styles.price}>

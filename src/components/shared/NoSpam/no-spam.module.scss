@@ -34,6 +34,7 @@
 
   @include tablet {
     width: 100%;
+    max-width: 500px;
   }
 
   @include mobile {
@@ -41,17 +42,3 @@
     margin: 0 0 40px 0;
   }
 }
-
-.title {
-  @include ultraWideH2($whiteColor);
-  margin-bottom: 8px;
-
-  @include mobile {
-    @include ultraWideH3($whiteColor);
-  }
-}
-
-.subtitle {
-  @include regularP1($whiteColor);
-}
-

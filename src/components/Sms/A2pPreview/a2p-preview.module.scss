@@ -1,0 +1,28 @@
+@import 'src/styles/vars';
+@import 'src/styles/viewport';
+
+.title {
+  width: 668px;
+  margin-bottom: 24px;
+
+  @include mobile {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.cardsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  margin: 24px 32px 0 0;
+}
+
+.cardIcon {
+  width: 24px;
+  height: 24px;
+  fill: $pitchBlackColor;
+}

@@ -1,3 +1,5 @@
+@import 'src/styles/viewport';
+
 .title {
   margin-bottom: 24px;
 }
@@ -5,18 +7,52 @@
 .content {
   display: flex;
   justify-content: space-between;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .contentLeft {
   width: 592px;
+
+  @include tablet {
+    width: 100%;
+    max-width: 592px;
+    margin-bottom: 40px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .contentRight {
   width: 384px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 592px;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .presentation {
   margin-bottom: 24px;
+
+  @include tablet {
+    max-width: 382px;
+  }
 }
 
 .consultation {

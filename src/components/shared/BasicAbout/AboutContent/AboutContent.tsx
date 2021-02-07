@@ -11,7 +11,7 @@ interface Props {
     image2xUrl: string;
     title: string;
     subtitle: string;
-    advantageText: string;
+    advantageText?: string;
     buttonText: string;
 }
 
@@ -21,7 +21,7 @@ export function AboutContent(props: Props) {
     image2xUrl,
     title,
     subtitle,
-    advantageText,
+    advantageText = '',
     buttonText,
   } = props;
   const { authUrls } = useContext(GlobalContext);

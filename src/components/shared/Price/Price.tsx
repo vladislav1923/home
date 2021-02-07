@@ -20,6 +20,7 @@ export function Price() {
           <Card flagTitle="SMS по своей базе" fill="grey">
             <div className={styles.cardPrices}>
               <PriceCard title="на номера МТС" subtitle="от 1,9 ₽" />
+              <div className={styles.separator} />
               <PriceCard title="на номера других операторов" subtitle="от 2,4 ₽" />
             </div>
           </Card>

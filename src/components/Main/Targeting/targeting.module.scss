@@ -1,0 +1,32 @@
+@import 'src/styles/vars';
+@import 'src/styles/viewport';
+
+.title {
+  width: 532px;
+  margin-bottom: 24px;
+
+  @include tablet {
+    width: 100%;
+    max-width: 532px;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.cardsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  margin: 32px 32px 0 0;
+}
+
+.cardIcon {
+  width: 24px;
+  height: 24px;
+  fill: $deepBlueColor;
+}

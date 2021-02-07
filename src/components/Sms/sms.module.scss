@@ -18,43 +18,77 @@
   }
 }
 
-.cabinet {
+.scalePreview {
   width: 1008px;
-  margin: 0 auto 64px;
+  margin: 0 auto 80px;
 
   @include tablet {
     width: 100%;
-    margin: 0 0 56px;
+    margin: 0 0 88px;
     padding: 0 32px;
   }
 
   @include mobile {
     width: 100%;
-    margin: 0 0 64px;
+    margin: 0 0 52px;
     padding: 0 20px;
   }
 }
 
-.targeting {
+.noSpam {
   width: 1008px;
   margin: 0 auto 88px;
 
   @include tablet {
     width: 100%;
-    margin: 0 0 56px;
+    margin: 0 0 88px;
     padding: 0 32px;
   }
 
   @include mobile {
     width: 100%;
-    margin: 0 0 64px;
+    margin: 0 0 40px;
+    padding: 0 20px;
+  }
+}
+
+.a2pPreview {
+  width: 1008px;
+  margin: 0 auto 80px;
+
+  @include tablet {
+    width: 100%;
+    margin: 0 0 60px;
+    padding: 0 32px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin: 0 0 52px;
     padding: 0 20px;
   }
 }
 
 .support {
   width: 1008px;
-  margin: 0 auto 104px;
+  margin: 0 auto 80px;
+
+  @include tablet {
+    width: 100%;
+    margin: 0 0 64px;
+    padding: 0 32px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin: 0 0 76px;
+    padding: 0 20px;
+  }
+}
+
+.price {
+  width: 1008px;
+  margin: 0 auto 120px;
 
   @include tablet {
     width: 100%;

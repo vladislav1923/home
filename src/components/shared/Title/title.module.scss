@@ -3,29 +3,40 @@
 @import 'src/styles/viewport';
 
 .titleH1 {
-  @include ultraWideH1($pitchBlackColor);
+  @include ultraWide();
+  @include h1();
   white-space: pre-line;
 
   @include mobile {
-    @include ultraWideH2($pitchBlackColor);
+    @include h2();
   }
 }
 
 .titleH2 {
-  @include ultraWideH2($pitchBlackColor);
+  @include ultraWide();
+  @include h2();
   white-space: pre-line;
 
   @include mobile {
-    @include ultraWideH3($pitchBlackColor);
+    @include h3();
   }
 }
 
 .subtitle {
-  @include regularP1($pitchBlackColor);
+  @include regular();
+  @include p1();
   margin-top: 8px;
   white-space: pre-line;
 
   @include mobile {
-    @include regularP2($pitchBlackColor);
+    @include p2();
   }
+}
+
+.white {
+  @include main($whiteColor);
+}
+
+.black {
+  @include main($pitchBlackColor);
 }
