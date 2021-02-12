@@ -7,6 +7,7 @@ import { Support } from '../shared/Support';
 import { Price } from '../shared/Price';
 import { Faq } from '../shared/Faq';
 import { Phone } from '../shared/icons';
+import {ScaleSteps} from "./ScaleSteps";
 
 export function Sms() {
   return (
@@ -24,7 +25,9 @@ export function Sms() {
       <div className={styles.scalePreview}>
         <ScalePreview />
       </div>
-      {/* ScaleSteps */}
+      <div className={styles.scaleSteps}>
+        <ScaleSteps />
+      </div>
       <div className={styles.noSpam}>
         <NoSpam />
       </div>

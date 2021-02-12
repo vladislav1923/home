@@ -61,8 +61,8 @@
 .separator {
   width: 1px;
   height: 64px;
-  background-color: $linkWaterColor;
   margin: 0 32px;
+  background-color: $linkWaterColor;
 
   @include mobile {
     width: 100%;

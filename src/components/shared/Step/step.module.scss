@@ -1,0 +1,71 @@
+@import 'src/styles/vars';
+@import 'src/styles/typography';
+@import 'src/styles/viewport';
+
+.step {
+  display: flex;
+  background-color: $whiteSmokeColor;
+  height: 356px;
+  border-radius: 16px;
+
+  @include mobile {
+    flex-direction: column;
+    border-radius: 0;
+    height: auto;
+  }
+}
+
+.content {
+  padding: 96px 24px 24px 56px;
+
+  @include tablet {
+    padding: 96px 16px 16px 32px;
+  }
+
+  @include mobile {
+    padding: 40px 20px 32px;
+  }
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @include mobile {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.index {
+  @include mediumP4($greyChateauColor);
+  margin-bottom: 8px;
+}
+
+.title {
+  @include mediumP1($deepBlueColor);
+  margin-bottom: 24px;
+
+  @include tablet {
+    @include mediumP3($deepBlueColor);
+  }
+
+  @include mobile {
+    @include mediumP3($deepBlueColor);
+  }
+}
+
+.arrowLarge {
+  @include mobile {
+    display: none;
+  }
+}
+
+.arrowMedium {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}

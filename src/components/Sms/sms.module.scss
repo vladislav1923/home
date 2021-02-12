@@ -35,6 +35,22 @@
   }
 }
 
+.scaleSteps {
+  width: 1008px;
+  margin: 0 auto 80px;
+
+  @include tablet {
+    width: 100%;
+    margin: 0 0 56px;
+    padding: 0 32px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin: 0 0 68px;
+  }
+}
+
 .noSpam {
   width: 1008px;
   margin: 0 auto 88px;
