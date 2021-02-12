@@ -4,14 +4,14 @@
 
 .step {
   display: flex;
-  background-color: $whiteSmokeColor;
   height: 356px;
   border-radius: 16px;
+  background-color: $whiteSmokeColor;
 
   @include mobile {
     flex-direction: column;
-    border-radius: 0;
     height: auto;
+    border-radius: 0;
   }
 }
 
@@ -29,8 +29,8 @@
 
 .image {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
+  justify-content: center;
 
   @include mobile {
     width: 100%;

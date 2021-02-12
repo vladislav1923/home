@@ -1,0 +1,27 @@
+@import 'src/styles/vars';
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  height: 8px;
+  margin-right: 8px;
+  line-height: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $linkWaterColor;
+}
+
+.dot[data-active="true"] {
+  background-color: $primaryColor;
+}

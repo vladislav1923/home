@@ -7,7 +7,7 @@ import { Support } from '../shared/Support';
 import { Price } from '../shared/Price';
 import { Faq } from '../shared/Faq';
 import { Phone } from '../shared/icons';
-import {ScaleSteps} from "./ScaleSteps";
+import { ScaleSteps } from './ScaleSteps';
 
 export function Sms() {
   return (
