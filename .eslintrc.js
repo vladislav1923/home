@@ -31,6 +31,11 @@ module.exports = {
         "@typescript-eslint/no-shadow": ["error"],
         "@typescript-eslint/no-unused-vars": "error",
         "no-unused-vars": "off",
-        "react/require-default-props": "off"
+        "react/require-default-props": "off",
+        "jsx-a11y/anchor-is-valid": [ "error", {
+            "components": [ "Link" ],
+            "specialLink": [ "hrefLeft", "hrefRight" ],
+            "aspects": [ "invalidHref", "preferButton" ]
+        }]
     },
 };

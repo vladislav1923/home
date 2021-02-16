@@ -1,0 +1,28 @@
+@import 'src/styles/vars';
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  width: 8px;
+  height: 4px;
+  margin-left: 8px;
+  fill: $primaryColor;
+}
+
+.contentWrapper {
+  position: relative;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contentOpen {
+  display: block;
+}

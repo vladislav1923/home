@@ -18,3 +18,4 @@ export * from './Like';
 export * from './Programmatic';
 export * from './ArrowLarge';
 export * from './ArrowMedium';
+export * from './ArrowFill';

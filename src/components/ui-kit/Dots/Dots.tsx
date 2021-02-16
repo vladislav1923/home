@@ -11,9 +11,9 @@ export function Dots({ amount, value, onChange }: Props) {
   const [dotsList, setDotsList] = useState<number[]>([]);
   useEffect(() => {
     const list: number[] = [];
-    let i = 1;
+    let i = 0;
 
-    while (i <= amount) {
+    while (i < amount) {
       list.push(i);
       i += 1;
     }
@@ -27,7 +27,7 @@ export function Dots({ amount, value, onChange }: Props) {
         <li key={dotNumber} className={styles.item}>
           <button
             type="button"
-            aria-label={`Кнопка выбора слайда${dotNumber}`}
+            aria-label={`Кнопка выбора слайда ${dotNumber}`}
             className={styles.dot}
             data-active={dotNumber === value}
             onClick={() => onChange(dotNumber)}
