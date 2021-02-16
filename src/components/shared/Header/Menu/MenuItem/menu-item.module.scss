@@ -1,0 +1,14 @@
+@import "src/styles/vars";
+@import "src/styles/typography";
+
+.link {
+  @include regularP1($pitchBlackColor);
+
+  &:hover {
+    @include regularP1($primaryColor);
+  }
+}
+
+.linkActive {
+  @include mediumP1($primaryColor);
+}

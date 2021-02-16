@@ -23,24 +23,3 @@
     width: 100%;
   }
 }
-
-.menu {
-  margin-left: 40px;
-}
-
-.menuItem {
-  @include regularP1($pitchBlackColor);
-  margin-right: 32px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:hover {
-    @include regularP1($primaryColor);
-  }
-}
-
-.menuItemActive {
-  @include regularP1($primaryColor);
-}

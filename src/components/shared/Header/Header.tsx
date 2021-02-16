@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import styles from './header.module.scss';
 import { ProductsList } from './ProductsList';
+import { Menu } from './Menu';
 
 export function Header() {
   const router = useRouter();
@@ -15,13 +16,9 @@ export function Header() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <ProductsList currentUrl={currentUrl} />
+          <ProductsList currentUrl={currentUrl} />
+          <Menu currentUrl={currentUrl} />
 
-        {/* <ul className={styles.menu}> */}
-        {/*  <li className={styles.menuItem}> */}
-        {/*    <Link href="/banner">О сервисе</Link> */}
-        {/*  </li> */}
-        {/* </ul> */}
       </div>
     </div>
   );
