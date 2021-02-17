@@ -1,54 +1,40 @@
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from './products-list.module.scss';
 import { Dropdown } from '../../../ui-kit/Dropdown';
-import { Products } from '../../../../enums/products';
 import { Logo } from '../../../ui-kit/Logo';
+import {PagesUrls} from "../../../../enums/pages-urls";
+import {getPageNameByUrl} from "../../../../utils/pages-names";
 
 interface Props {
-    currentUrl: string;
+    currentUrl: PagesUrls;
 }
 
 export function ProductsList({ currentUrl }: Props) {
-  const [currentProduct, setCurrentProduct] = useState(Products.main);
-  useEffect(() => {
-    switch (currentUrl) {
-      case '/research':
-        setCurrentProduct(Products.research);
-        break;
-      case '/malldata':
-        setCurrentProduct(Products.mall);
-        break;
-      default:
-        setCurrentProduct(Products.main);
-        break;
-    }
-  }, [currentUrl]);
-
   const [productsList] = useState([
     {
-      name: Products.main,
-      url: '/',
+      name: getPageNameByUrl(PagesUrls.main),
+      url: PagesUrls.main,
     },
     {
-      name: Products.research,
-      url: '/research',
+      name: getPageNameByUrl(PagesUrls.research),
+      url: PagesUrls.research,
     },
     {
-      name: Products.mall,
-      url: '/malldata',
+      name: getPageNameByUrl(PagesUrls.mall),
+      url: PagesUrls.research,
     },
   ]);
 
   return (
-    <Dropdown button={<Logo product={currentProduct} />}>
+    <Dropdown button={<Logo currentUrl={currentUrl} />}>
       <ul className={styles.list}>
         {productsList.map((product) => (
           <li key={product.name} className={styles.item}>
             <Link href={product.url}>
               <a
                 className={styles.productLink}
-                data-active={currentProduct === product.name}
+                data-active={currentUrl === product.url}
               >
                 МТС
                 {' '}
